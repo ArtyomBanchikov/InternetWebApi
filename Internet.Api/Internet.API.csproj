@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>18c0694f-816d-48d1-9b3d-44ece23174a0</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.29" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Expressions" Version="4.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Internet.Bll\Internet.BLL.csproj" />
+  </ItemGroup>
+
+</Project>
