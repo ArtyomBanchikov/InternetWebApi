@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Internet.BLL.Models;
-using Internet.DAL.Entities;
+using Internet.Dal.Entities;
 
 namespace Internet.BLL.Mappers
 {

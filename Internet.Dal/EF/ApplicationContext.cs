@@ -1,8 +1,8 @@
-﻿using Internet.DAL.Entities;
+﻿using Internet.Dal.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
-namespace Internet.DAL.EF
+namespace Internet.Dal.EF
 {
     public class ApplicationContext : DbContext
     {

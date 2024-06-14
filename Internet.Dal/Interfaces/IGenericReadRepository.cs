@@ -1,4 +1,4 @@
-﻿namespace Internet.DAL.Interfaces
+﻿namespace Internet.Dal.Interfaces
 {
     public interface IGenericReadRepository<TEntity> where TEntity : class
     {

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Internet.BLL.Interfaces;
-using Internet.DAL.Interfaces;
+using Internet.Dal.Interfaces;
 
 namespace Internet.BLL.Services
 {

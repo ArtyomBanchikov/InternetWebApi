@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Internet.DAL.DI;
+using Internet.Dal.DI;
 using Internet.BLL.Interfaces;
 using Internet.BLL.Models;
 using Internet.BLL.Services;

@@ -1,8 +1,7 @@
-﻿using Internet.DAL.EF;
-using Internet.DAL.Entities;
-using Internet.DAL.Interfaces;
+﻿using Internet.Dal.EF;
+using Internet.Dal.Entities;
 
-namespace Internet.DAL.Repositories
+namespace Internet.Dal.Repositories
 {
     public class AccountRepository : GenericReadRepository<AccountEntity>
     {
