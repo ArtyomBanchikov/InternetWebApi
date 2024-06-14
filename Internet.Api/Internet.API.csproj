@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Internet.Bll\Internet.BLL.csproj" />
+    <ProjectReference Include="..\Internet.Bll\Internet.Bll.csproj" />
   </ItemGroup>
 
 </Project>

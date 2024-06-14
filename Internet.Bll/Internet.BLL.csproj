@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Internet.Dal\Internet.DAL.csproj" />
+    <ProjectReference Include="..\Internet.Dal\Internet.Dal.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  consumer:
+    image: internetconsumer:latest
+    networks:
+      - internet
+    restart: unless-stopped
+
+  api:
+    image: internetapi:latest
+    volumes:
+      - logs:/Logs
+    ports:
+      - 
+    networks:
+      - internet
+    restart: unless-stopped
+
+
+volumes:
+  logs:
+
+networks:
+  internet:
+    driver: bridge
