@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Internet.API.ViewModels.Client;
-using Internet.BLL.Interfaces;
-using Internet.BLL.Models;
+using Internet.Bll.Interfaces;
+using Internet.Bll.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;

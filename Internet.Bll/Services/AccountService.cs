@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Internet.BLL.Interfaces;
-using Internet.BLL.Models;
+using Internet.Bll.Interfaces;
+using Internet.Bll.Models;
 using Internet.Dal.Entities;
 using Internet.Dal.Interfaces;
 
-namespace Internet.BLL.Services
+namespace Internet.Bll.Services
 {
     public class AccountService : GenericReadService<AccountModel, AccountEntity>
     {

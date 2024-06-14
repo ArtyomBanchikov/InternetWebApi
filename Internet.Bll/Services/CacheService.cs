@@ -1,8 +1,8 @@
-﻿using Internet.BLL.Interfaces;
+﻿using Internet.Bll.Interfaces;
 using StackExchange.Redis;
 using System.Text.Json;
 
-namespace Internet.BLL.Services
+namespace Internet.Bll.Services
 {
     public class CacheService : ICacheService
     {

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Internet.BLL.Interfaces;
+using Internet.Bll.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Internet.API.Controllers

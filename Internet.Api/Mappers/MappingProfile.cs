@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Internet.API.ViewModels;
 using Internet.API.ViewModels.Client;
-using Internet.BLL.Models;
+using Internet.Bll.Models;
 
 namespace Internet.API.Mappers
 {

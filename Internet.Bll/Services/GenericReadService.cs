@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Internet.BLL.Interfaces;
+using Internet.Bll.Interfaces;
 using Internet.Dal.Interfaces;
 
-namespace Internet.BLL.Services
+namespace Internet.Bll.Services
 {
     public class GenericReadService<TModel, TEntity> : IGenericReadService<TModel>
         where TModel : class

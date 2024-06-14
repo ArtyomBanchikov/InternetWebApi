@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using Internet.BLL.Models;
+using Internet.Bll.Models;
 using Internet.Dal.Entities;
 using Internet.Dal.Interfaces;
 
-namespace Internet.BLL.Services
+namespace Internet.Bll.Services
 {
     public class ClientService : GenericReadService<ClientModel, ClientEntity>
     {
