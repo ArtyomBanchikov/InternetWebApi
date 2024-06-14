@@ -1,8 +1,8 @@
-﻿using Internet.API.ViewModels;
+﻿using Internet.Api.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Internet.API.Hubs
+namespace Internet.Api.Hubs
 {
     [Authorize]
     public class ClientHub : Hub

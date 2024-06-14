@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using Internet.API.ViewModels;
-using Internet.API.ViewModels.Client;
+using Internet.Api.ViewModels;
+using Internet.Api.ViewModels.Client;
 using Internet.Bll.Models;
 
-namespace Internet.API.Mappers
+namespace Internet.Api.Mappers
 {
     public class MappingProfile : Profile
     {

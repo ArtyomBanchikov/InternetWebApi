@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Internet.API.Middlewares
+namespace Internet.Api.Middlewares
 {
     public class ExceptionHandlerMiddleware
     {

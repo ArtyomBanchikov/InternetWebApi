@@ -2,7 +2,7 @@
 using Internet.Bll.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Internet.API.Controllers
+namespace Internet.Api.Controllers
 {
     public class GenericReadController<TModel, TViewModel> : Controller
         where TViewModel : class
