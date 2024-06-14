@@ -8,8 +8,6 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
-RUN apt-get update && apt-get install -y supervisor
-
 COPY ["Internet.Api/Internet.Api.csproj", "Internet.Api/"]
 RUN dotnet restore "Internet.Api/Internet.Api.csproj"
 COPY . .
