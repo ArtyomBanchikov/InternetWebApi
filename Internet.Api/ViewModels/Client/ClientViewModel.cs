@@ -1,4 +1,4 @@
-﻿namespace Internet.API.ViewModels.Client
+﻿namespace Internet.Api.ViewModels.Client
 {
     public class ClientViewModel
     {

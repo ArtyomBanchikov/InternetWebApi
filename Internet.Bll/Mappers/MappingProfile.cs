@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Internet.BLL.Models;
-using Internet.DAL.Entities;
+using Internet.Bll.Models;
+using Internet.Dal.Entities;
 
-namespace Internet.BLL.Mappers
+namespace Internet.Bll.Mappers
 {
     public class MappingProfile : Profile
     {

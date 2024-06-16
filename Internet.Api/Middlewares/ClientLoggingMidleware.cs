@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 
-namespace Internet.API.Middlewares
+namespace Internet.Api.Middlewares
 {
     public class ClientLoggingMidleware
     {

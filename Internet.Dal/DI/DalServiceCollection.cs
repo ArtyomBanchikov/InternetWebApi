@@ -1,12 +1,12 @@
-﻿using Internet.DAL.EF;
-using Internet.DAL.Entities;
-using Internet.DAL.Interfaces;
-using Internet.DAL.Repositories;
+﻿using Internet.Dal.EF;
+using Internet.Dal.Entities;
+using Internet.Dal.Interfaces;
+using Internet.Dal.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Internet.DAL.DI
+namespace Internet.Dal.DI
 {
     public static class DalServiceCollection
     {

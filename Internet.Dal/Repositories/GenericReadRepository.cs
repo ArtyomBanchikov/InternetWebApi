@@ -1,8 +1,8 @@
-﻿using Internet.DAL.EF;
-using Internet.DAL.Interfaces;
+﻿using Internet.Dal.EF;
+using Internet.Dal.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Internet.DAL.Repositories
+namespace Internet.Dal.Repositories
 {
     public class GenericReadRepository<TEntity> : IGenericReadRepository<TEntity> where TEntity : class
     {

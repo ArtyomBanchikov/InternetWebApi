@@ -1,4 +1,4 @@
-﻿namespace Internet.BLL.Models
+﻿namespace Internet.Bll.Models
 {
     public class TariffModel
     {
