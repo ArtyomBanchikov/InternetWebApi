@@ -18,6 +18,7 @@ namespace Internet.Bll.DI
             services.AddScoped<IGenericReadService<ClientModel>, ClientService>();
             services.AddScoped<IGenericReadService<TariffModel>, TariffService>();
             services.AddScoped<IAccountTariffService, AccountTariffService>();
+            services.AddScoped<IGenericReadService<ServiceModel>, ServiceService>();
 
             services.AddScoped<ICacheService, CacheService>();
 

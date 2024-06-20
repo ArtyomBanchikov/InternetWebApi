@@ -15,6 +15,9 @@ namespace Internet.Api.Mappers
             CreateMap<AccountTariffViewModel, AccountTariffModel>();
             CreateMap<AccountTariffModel, AccountTariffViewModel>();
 
+            CreateMap<AccountServiceViewModel, AccountServiceModel>();
+            CreateMap<AccountServiceModel, AccountServiceViewModel>();
+
             CreateMap<ClientViewModel, ClientModel>();
             CreateMap<ClientModel, ClientViewModel>();
 
@@ -29,6 +32,12 @@ namespace Internet.Api.Mappers
 
             CreateMap<TariffViewModel, TariffModel>();
             CreateMap<TariffModel, TariffViewModel>();
+
+            CreateMap<ServiceViewModel, ServiceModel>();
+            CreateMap<ServiceModel, ServiceViewModel>();
+
+            CreateMap<PeriodicServiceViewModel, PeriodicServiceModel>();
+            CreateMap<PeriodicServiceModel, PeriodicServiceViewModel>();
         }
     }
 }

@@ -19,6 +19,7 @@ namespace Internet.Dal.DI
             services.AddScoped<IGenericReadRepository<ClientEntity>, ClientRepository>();
             services.AddScoped<IGenericReadRepository<TariffEntity>, TariffRepository>();
             services.AddScoped<IAccountTariffRepository, AccountTariffRepository>();
+            services.AddScoped<IGenericReadRepository<ServiceEntity>, ServiceRepository>();
         }
     }
 }
