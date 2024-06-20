@@ -14,11 +14,20 @@ namespace Internet.BLL.Mappers
             CreateMap<AccountTariffEntity, AccountTariffModel>();
             CreateMap<AccountTariffModel, AccountTariffEntity>();
 
+            CreateMap<AccountServiceEntity, AccountServiceModel>();
+            CreateMap<AccountServiceModel, AccountServiceEntity>();
+
             CreateMap<ClientEntity, ClientModel>();
             CreateMap<ClientModel, ClientEntity>();
 
             CreateMap<TariffEntity, TariffModel>();
             CreateMap<TariffModel, TariffEntity>();
+
+            CreateMap<ServiceEntity, ServiceModel>();
+            CreateMap<ServiceModel, ServiceEntity>();
+
+            CreateMap<PeriodicServiceEntity, PeriodicServiceModel>();
+            CreateMap<PeriodicServiceModel, PeriodicServiceEntity>();
         }
     }
 }
