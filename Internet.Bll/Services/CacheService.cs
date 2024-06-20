@@ -35,8 +35,14 @@ namespace Internet.BLL.Services
 
         public bool SetData<T>(string key, T data, DateTimeOffset expirationTime)
         {
+            var options = new JsonSerializerOptions
+            {
+                ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve
+            };
+
+            string jsonString = JsonSerializer.Serialize(data, options);
             var expirityTime = expirationTime.DateTime.Subtract(DateTime.Now);
-            return _cacheDb.StringSet(key, JsonSerializer.Serialize(data), expirityTime);
+            return _cacheDb.StringSet(key, jsonString, expirityTime);
         }
     }
 }
