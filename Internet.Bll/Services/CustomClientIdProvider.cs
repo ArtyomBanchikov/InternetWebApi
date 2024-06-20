@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 
-namespace Internet.BLL.Services
+namespace Internet.Bll.Services
 {
     public class CustomClientIdProvider : IUserIdProvider
     {

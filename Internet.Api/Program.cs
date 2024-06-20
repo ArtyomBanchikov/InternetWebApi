@@ -1,6 +1,6 @@
 using Internet.API.Hubs;
 using Internet.API.Middlewares;
-using Internet.BLL.DI;
+using Internet.Bll.DI;
 using Internet.BLL.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.SignalR;
@@ -43,10 +43,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddSignalR();
 
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-);
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddAutoMapper(typeof(Internet.BLL.Mappers.MappingProfile), typeof(Internet.API.Mappers.MappingProfile));
+builder.Services.AddAutoMapper(typeof(Internet.Bll.Mappers.MappingProfile), typeof(Internet.API.Mappers.MappingProfile));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

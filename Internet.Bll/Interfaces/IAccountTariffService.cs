@@ -1,6 +1,6 @@
-﻿using Internet.BLL.Models;
+﻿using Internet.Bll.Models;
 
-namespace Internet.BLL.Interfaces
+namespace Internet.Bll.Interfaces
 {
     public interface IAccountTariffService
     {

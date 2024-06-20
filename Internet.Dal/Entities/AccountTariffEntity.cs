@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Internet.DAL.Entities
+namespace Internet.Dal.Entities
 {
     [Table("account_tariff_link")]
     public class AccountTariffEntity

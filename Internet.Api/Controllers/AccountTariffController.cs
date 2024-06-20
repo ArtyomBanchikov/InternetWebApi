@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Internet.API.ViewModels;
-using Internet.BLL.Interfaces;
+using Internet.Api.ViewModels;
+using Internet.Bll.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Internet.API.Controllers
+namespace Internet.Api.Controllers
 {
     [ApiController]
     [Route("[Controller]")]

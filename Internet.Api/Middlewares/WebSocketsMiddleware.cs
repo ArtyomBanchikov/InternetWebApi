@@ -1,4 +1,4 @@
-﻿namespace Internet.API.Middlewares
+﻿namespace Internet.Api.Middlewares
 {
     public class WebSocketsMiddleware
     {

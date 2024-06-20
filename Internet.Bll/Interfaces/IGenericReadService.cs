@@ -1,4 +1,4 @@
-﻿namespace Internet.BLL.Interfaces
+﻿namespace Internet.Bll.Interfaces
 {
     public interface IGenericReadService<TModel> where TModel : class
     {

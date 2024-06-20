@@ -1,6 +1,6 @@
-﻿using Internet.DAL.Entities;
+﻿using Internet.Dal.Entities;
 
-namespace Internet.DAL.Interfaces
+namespace Internet.Dal.Interfaces
 {
     public interface IAccountTariffRepository
     {

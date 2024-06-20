@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Internet.API.Hubs;
-using Internet.API.ViewModels;
-using Internet.BLL.Interfaces;
-using Internet.BLL.Models;
+using Internet.Api.Hubs;
+using Internet.Api.ViewModels;
+using Internet.Bll.Interfaces;
+using Internet.Bll.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Internet.API.Controllers
+namespace Internet.Api.Controllers
 {
     [ApiController]
     [Route("[Controller]")]

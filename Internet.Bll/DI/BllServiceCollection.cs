@@ -1,12 +1,12 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Internet.DAL.DI;
-using Internet.BLL.Interfaces;
-using Internet.BLL.Models;
-using Internet.BLL.Services;
+using Internet.Dal.DI;
+using Internet.Bll.Interfaces;
+using Internet.Bll.Models;
+using Internet.Bll.Services;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Internet.BLL.DI
+namespace Internet.Bll.DI
 {
     public static class BllServiceCollection
     {

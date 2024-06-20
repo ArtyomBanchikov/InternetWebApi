@@ -2,7 +2,8 @@
 using Internet.Dal.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Internet.DAL.Repositories
+
+namespace Internet.Dal.Repositories
 {
     public class AccountRepository : GenericReadRepository<AccountEntity>
     {

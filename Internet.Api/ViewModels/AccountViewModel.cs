@@ -1,4 +1,4 @@
-﻿namespace Internet.API.ViewModels
+﻿namespace Internet.Api.ViewModels
 {
     public class AccountViewModel
     {
