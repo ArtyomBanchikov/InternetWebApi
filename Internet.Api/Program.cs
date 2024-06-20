@@ -1,12 +1,9 @@
-using Internet.API.Hubs;
-using Internet.API.Middlewares;
+using Internet.Api.Hubs;
+using Internet.Api.Middlewares;
 using Internet.Bll.DI;
-using Internet.BLL.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.SignalR;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +11,6 @@ builder.Host.UseSerilog((context, services, configuration) => configuration
     .ReadFrom.Configuration(context.Configuration)
     .ReadFrom.Services(services));
 
-//builder.Services.AddSingleton<IUserIdProvider, CustomClientIdProvider>();
 builder.Services.AddBllServices(builder.Configuration);
 
 builder.Services.AddAuthorization();
@@ -45,7 +41,7 @@ builder.Services.AddSignalR();
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddAutoMapper(typeof(Internet.Bll.Mappers.MappingProfile), typeof(Internet.API.Mappers.MappingProfile));
+builder.Services.AddAutoMapper(typeof(Internet.Bll.Mappers.MappingProfile), typeof(Internet.Api.Mappers.MappingProfile));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
