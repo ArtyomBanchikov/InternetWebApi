@@ -14,9 +14,26 @@ namespace Internet.DAL.EF
 
         public DbSet<AccountTariffEntity> AccountTariffs { get; set; } = null!;
 
+        public DbSet<ServiceEntity> Services { get; set; } = null !;
+
+        public DbSet<PeriodicServiceEntity> PeriodicServices { get; set; } = null!;
+
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
             Database.EnsureCreated();
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<AccountServiceEntity>()
+                .HasOne(accountService => accountService.Account)
+                .WithMany(account => account.AccountServices);
+
+            modelBuilder.Entity<AccountServiceEntity>()
+                .HasOne(accountService => accountService.Service)
+                .WithMany();
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

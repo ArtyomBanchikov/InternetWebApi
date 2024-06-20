@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Internet.DAL.Entities
 {
@@ -11,5 +12,7 @@ namespace Internet.DAL.Entities
 
         [Column("balance")]
         public double Balance { get; set; }
+
+        public IEnumerable<AccountServiceEntity>? AccountServices { get; set; }
     }
 }
