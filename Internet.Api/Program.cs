@@ -42,10 +42,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 builder.Services.AddSignalR();
 
-builder.Services.AddControllers();
-//builder.Services.AddControllers().AddNewtonsoftJson(options =>
-//    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-//);
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+
 builder.Services.AddAutoMapper(typeof(Internet.BLL.Mappers.MappingProfile), typeof(Internet.API.Mappers.MappingProfile));
 
 builder.Services.AddEndpointsApiExplorer();
